@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Краса відкритого коду: Linux та Git</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Linux та Git</h1>
+        <img src="1.jfif" alt="Логотип Linux" class="linux-logo">
+        <nav>
+            <ul>
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">Про Linux</a></li>
+                <li><a href="#">Переваги</a></li>
+                <li><a href="#">Git</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Секція про GNU/Linux -->
+        <section class="linux-info">
+            <h2>Коротка інформація про ОС GNU/Linux</h2>
+            <p>GNU/Linux — це операційна система, яка поєднує ядро Linux і програмне забезпечення проекту GNU. Це одна з найпопулярніших систем з відкритим кодом, яка використовується на серверах, комп'ютерах, мобільних пристроях та вбудованих системах.</p>
+        </section>
+
+        <!-- Секція про дистрибутиви Linux -->
+        <section class="linux-distros">
+            <h2>Перелік найбільш популярних дистрибутивів</h2>
+            <ul>
+                <li>Ubuntu</li>
+                <li>Debian</li>
+                <li>Fedora</li>
+                <li>Arch Linux</li>
+                <li>CentOS</li>
+                <li>Red Hat Enterprise Linux (RHEL)</li>
+                <li>openSUSE</li>
+            </ul>
+        </section>
+
+        <!-- Секція команд CLI Linux -->
+        <section class="linux-commands">
+            <h2>Приклади команд роботи в Linux CLI</h2>
+            <ol>
+                <li><code>pwd</code> — показує поточний каталог.</li>
+                <li><code>echo "текст"</code> — виводить текст.</li>
+                <li><code>ls</code> — виводить список файлів і директорій у каталозі.</li>
+                <li><code>cd &lt;каталог&gt;</code> — змінює поточний каталог.</li>
+                <li><code>touch &lt;файл&gt;</code> — створює новий файл.</li>
+                <li><code>mkdir &lt;каталог&gt;</code> — створює новий каталог.</li>
+                <li><code>cp &lt;файл&gt; &lt;каталог&gt;</code> — копіює файл у каталог.</li>
+                <li><code>mv &lt;файл&gt; &lt;каталог&gt;</code> — переміщує або перейменовує файл.</li>
+                <li><code>rm &lt;файл&gt;</code> — видаляє файл.</li>
+                <li><code>history</code> — виводить історію команд.</li>
+            </ol>
+        </section>
+
+        <!-- Секція з прикладом BASH-скрипта -->
+        <section class="bash-script">
+            <h2>BASH-скрипт, що імітує авторизацію в системі</h2>
+            <pre><code>
+#!/bin/bash
+echo "Введіть логін:"
+read login
+echo "Введіть пароль:"
+read -s password
+
+if [[ $login == "admin" && $password == "1234" ]]; then
+    echo "Авторизація успішна!"
+else
+    echo "Невірний логін або пароль!"
+fi
+            </code></pre>
+        </section>
+
+        <!-- Секція джерел інформації по темі -->
+        <section class="linux-sources">
+            <h2>Джерела інформації по темі</h2>
+            <ul>
+                <li><a href="https://www.kernel.org/">Офіційний сайт ядра Linux</a></li>
+                <li><a href="https://www.gnu.org/">Проект GNU</a></li>
+                <li><a href="https://www.linux.com/">Linux.com</a></li>
+                <li><a href="https://wiki.archlinux.org/">ArchWiki</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Світ Linux та Git. Всі права захищені.</p>
+    </footer>
+</body>
+</html>
